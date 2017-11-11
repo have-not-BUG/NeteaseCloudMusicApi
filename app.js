@@ -3,7 +3,7 @@ const http = require('http')
 const apicache = require('apicache')
 
 const app = express()
-let cache = apicache.middleware
+var cache = apicache.middleware
 
 // 跨域设置
 // app.all('*', function (req, res, next) {
