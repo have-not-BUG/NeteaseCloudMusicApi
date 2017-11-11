@@ -244,7 +244,7 @@ app.use('/user/subcount', require('./router/user_subcount'))
 
 app.use('/user/record', require('./router/user_playrecord'))
 
-const port = process.env.PORT || 3000
+const port = process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log(`server running @${port}`)
