@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express()
-const { createWebAPIRequest } = require('../util/util')
+const  createWebAPIRequest  = require('../util/util')
 
 router.get('/', (req, res) => {
   const cookie = req.get('Cookie') ? req.get('Cookie') : ''
